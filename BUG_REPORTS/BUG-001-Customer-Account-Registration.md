@@ -202,3 +202,48 @@ These flows were checked after the configuration change.
 The issue was reproduced following a real customer report.
 
 The cause was identified in the WooCommerce account configuration. The registration workflow was restored, tested end to end and confirmed operational.
+---
+
+## Interview Discussion
+
+### Possible interview questions
+
+**1. How did you reproduce this issue?**
+
+I opened the **My Account** page as a logged-out user and observed that only the login form was displayed. There was no registration form or alternative option for a new customer to create an account.
+
+**2. Why was the severity classified as Major instead of Critical?**
+
+The issue blocked customer registration, which is an important feature, but customers could still place orders using guest checkout. The main ordering flow was therefore still available.
+
+**3. How did you identify the root cause?**
+
+I reviewed the WooCommerce account settings and found that customer registration was disabled for both the **My Account** page and checkout.
+
+**4. How did you verify the fix?**
+
+I created a new test account, confirmed that the registration email was received, opened the password setup link, created a valid password, logged in and checked the customer dashboard.
+
+**5. What security-related checks did you perform?**
+
+I verified that the password form rejected empty and weak passwords and required a stronger password containing uppercase characters, numbers and a special character.
+
+**6. What regression areas did you check?**
+
+I checked:
+
+- guest checkout;
+- registration on the My Account page;
+- registration during checkout;
+- login;
+- registration email delivery;
+- password setup;
+- customer dashboard access.
+
+**7. What business impact could this issue have caused?**
+
+New customers could believe that the website was not working correctly, abandon the account creation process or contact customer support. It could also reduce customer retention because users could not access order history or saved details.
+
+### Key lesson
+
+Configuration changes in WooCommerce can completely disable an important customer workflow without requiring any code change. Account-related settings should therefore be included in regression testing after plugin updates or checkout changes.
