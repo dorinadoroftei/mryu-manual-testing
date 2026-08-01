@@ -118,3 +118,49 @@ Related functionality to monitor after the fix:
 The issue affected usability and reliability of the shopping cart.
 
 After the modification, quantity changes were reflected without requiring the customer to manually reload the page.
+---
+
+## Interview Discussion
+
+### Possible interview questions
+
+**1. How did you reproduce this issue?**
+
+I added a product to the shopping cart, changed the quantity and observed the cart without manually refreshing the page. The updated state was not reflected immediately.
+
+**2. Why was the severity classified as Major?**
+
+The issue affected a core e-commerce function immediately before checkout. Although the customer could use a page refresh as a workaround, the cart state was not reliable and could create uncertainty about quantities and totals.
+
+**3. Why was the root cause not documented?**
+
+The available evidence confirmed the visible behavior and the successful fix, but it did not confirm the exact technical cause. I avoided documenting an assumption as a verified root cause.
+
+**4. How did you verify the fix?**
+
+I changed product quantities again and confirmed that the cart updated without a manual refresh. I also checked that the customer could continue to checkout using the updated cart state.
+
+**5. What additional checks should be performed after this type of fix?**
+
+I would verify:
+
+- quantity increase;
+- quantity decrease;
+- product removal;
+- cart totals;
+- delivery threshold;
+- coupon application;
+- checkout totals;
+- mini-cart synchronization.
+
+**6. What risks could remain after the fix?**
+
+The cart interface may update visually while totals or checkout data remain outdated. For this reason, both the displayed cart and the final checkout values must be validated.
+
+**7. What business impact could this issue have caused?**
+
+Customers could lose confidence in the cart, place an order with the wrong quantity or abandon the ordering process because the interface appeared unresponsive.
+
+### Key lesson
+
+A successful UI update is not enough. After a cart-related fix, the product quantity, totals, discounts, delivery conditions and checkout data must all remain synchronized.
