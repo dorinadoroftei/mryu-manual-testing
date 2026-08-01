@@ -1,4 +1,4 @@
-# MR YU Manual Testing Portfolio
+# Production QA Portfolio – MR YU Case Study
 
 ## Project overview
 
