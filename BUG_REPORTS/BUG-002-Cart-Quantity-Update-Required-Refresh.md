@@ -8,6 +8,14 @@ The customer had to refresh/reload the page for the updated state to be reflecte
 
 ---
 
+## Business Impact
+
+Customers could lose confidence in the cart, continue with an outdated quantity or total, or abandon checkout because the interface appeared unresponsive.
+
+A manual page refresh was available as a workaround, so ordering was impaired but not completely blocked.
+
+---
+
 ## Module
 
 Shopping Cart / WooCommerce
@@ -75,6 +83,14 @@ Cart interactions should be reliable and provide immediate feedback to customers
 
 ---
 
+## Root Cause
+
+**Not confirmed**
+
+The visible behavior and the successful correction were verified, but the available evidence did not identify the exact technical cause. No plugin, script or configuration is presented as the cause without supporting evidence.
+
+---
+
 ## Resolution
 
 The cart behavior was modified so quantity changes are reflected without requiring a manual page refresh.
@@ -96,6 +112,16 @@ Verified:
 ## Status
 
 **Fixed and retested**
+
+---
+
+## Evidence Available
+
+- Reproduction notes describing the stale cart state.
+- Manual before/after behavior comparison.
+- Retest observations for quantity changes and checkout continuation.
+
+No customer or payment information is required for this evidence.
 
 ---
 
