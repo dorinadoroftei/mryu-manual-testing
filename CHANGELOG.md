@@ -4,6 +4,44 @@ This document contains the chronological history of functional improvements, bug
 
 ---
 
+## 2026-08-04 – New Product Listing: Orez cu legume 300 g
+
+### Change Implemented
+
+A missing standalone rice side dish was added to the live WooCommerce catalog.
+
+### Product Details
+
+- **Product:** Orez cu legume 300 g
+- **WooCommerce ID:** 2364
+- **Price:** 20 lei
+- **Category:** Orez & Garnituri / Orez
+- **Ingredients:** rice, carrot, peas, corn, egg and soy sauce
+- **Product URL:** https://mryu.ro/product/orez-cu-legume-300-g/
+
+### Media and SEO
+
+- Main catalog image exported as WebP, 1200 × 1200 px.
+- Rank Math SEO score after publication: 74/100.
+
+### Functional Testing
+
+The following checks were completed successfully:
+
+- Product page opens correctly.
+- Product name, weight, price and ingredients are displayed.
+- Main product image loads correctly.
+- Product is assigned to the intended catalog categories.
+- The **Add to cart** button is active.
+
+### Result
+
+**Status:** ✅ Published and verified
+
+The product is now available as a standalone item in the MR YU online menu.
+
+---
+
 ## 2026-07-31 – Customer Account Registration Fix
 
 ### Issue Reported
