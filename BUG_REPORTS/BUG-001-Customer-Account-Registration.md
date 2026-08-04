@@ -8,6 +8,14 @@ The issue was reported by a real customer who attempted to access a previous acc
 
 ---
 
+## Business Impact
+
+New customers could not create an account from the dedicated account page. This could increase support requests, reduce customer retention and create the impression that the website was malfunctioning.
+
+Guest checkout remained available, so the main ordering flow was not completely blocked.
+
+---
+
 ## Module
 
 Customer Account / WooCommerce
@@ -202,6 +210,7 @@ These flows were checked after the configuration change.
 The issue was reproduced following a real customer report.
 
 The cause was identified in the WooCommerce account configuration. The registration workflow was restored, tested end to end and confirmed operational.
+
 ---
 
 ## Interview Discussion
