@@ -86,6 +86,15 @@ The exact WordPress, Elementor, optimization-plugin or theme mechanism that adde
 9. Check homepage visuals and responsive layout.
 10. Run menu, navigation and cart smoke tests.
 
+### Future comparison record
+
+Keep the July 2026 diagnostic as historical evidence. At an authorized retest, record the date, current LCP element, device profile, throttling, cache conditions and tool version. Collect three comparable runs per condition and report the median LCP. If the original finding does not reproduce, record that outcome with the observed conditions.
+
+| Condition | Run 1 | Run 2 | Run 3 | Median LCP | Approved evidence |
+|---|---|---|---|---|---|
+| Current baseline | — | — | — | Pending | — |
+| After approved change | — | — | — | Pending | — |
+
 ## Change constraints
 
 - Do not update Elementor or Elementor Pro only to address this finding.
