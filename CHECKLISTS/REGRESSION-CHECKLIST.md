@@ -2,6 +2,8 @@
 
 Use this checklist after catalog, configuration, plugin, theme, CSS, checkout or navigation changes. Record Pass, Fail, Blocked or Not Applicable for each item.
 
+Use the [release run record](../TEST_SESSIONS/REGRESSION-AND-RETEST-RECORDS.md#future-release-run) to record prioritized cases, actual outcomes and evidence for a specific release.
+
 ## 1. Pre-change controls
 
 - [ ] Current change scope is documented.
