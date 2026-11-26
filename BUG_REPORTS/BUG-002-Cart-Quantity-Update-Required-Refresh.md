@@ -99,6 +99,8 @@ The cart behavior was modified so quantity changes are reflected without requiri
 
 ## Retesting
 
+See [TC-003](../TEST_CASES/CORE-FLOWS.md#tc-003--add-product-and-synchronize-cart-state) for the cart test case and the [dated historical record](../TEST_SESSIONS/REGRESSION-AND-RETEST-RECORDS.md#historical-cart-retest) for the available observation. Capture exact counts, subtotals and browser details in the [future retest record](../TEST_SESSIONS/REGRESSION-AND-RETEST-RECORDS.md#future-defect-retest) when observed.
+
 The cart was tested again after the modification.
 
 Verified:
