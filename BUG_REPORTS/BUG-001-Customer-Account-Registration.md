@@ -122,6 +122,8 @@ The following existing options remained enabled:
 
 ## Retesting
 
+Trace the registration flow through [TC-007](../TEST_CASES/CORE-FLOWS.md#tc-007--register-a-customer-account) and the [account checklist](../CHECKLISTS/REGRESSION-CHECKLIST.md#9-customer-account). Use the [future defect retest record](../TEST_SESSIONS/REGRESSION-AND-RETEST-RECORDS.md#future-defect-retest) for dated step-level observations and the follow-up finding.
+
 The complete registration flow was retested.
 
 ### Registration form
