@@ -8,12 +8,20 @@ The portfolio focuses on real production workflows: catalog browsing, responsive
 
 > This is a QA case study and documentation repository. It is not the source-code repository or a backup of the live WordPress website.
 
+## Start here
+
+1. [BUG-002 and its business impact](BUG_REPORTS/BUG-002-Cart-Quantity-Update-Required-Refresh.md) describe the cart state defect.
+2. [TC-003](TEST_CASES/CORE-FLOWS.md#tc-003--add-product-and-synchronize-cart-state) defines the expected cart behavior.
+3. [The historical cart retest](TEST_SESSIONS/REGRESSION-AND-RETEST-RECORDS.md#historical-cart-retest) records the available July 2026 evidence and links to the next-run template.
+
+The [Commerce QA Automation demo](https://github.com/dorinadoroftei/commerce-qa-automation) is an independent synthetic project.
+
 ## Project status
 
 - **Environment:** Live production website
 - **Testing type:** Manual, exploratory, regression and risk-based testing
 - **Primary platforms:** Desktop web and responsive mobile web
-- **Last documentation update:** 2026-08-04
+- **Last documentation update:** 2026-11-26
 - **Current documented defects:** 2 fixed, 1 performance finding awaiting retest
 
 ## Testing scope
